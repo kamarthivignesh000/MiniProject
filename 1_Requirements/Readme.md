@@ -74,17 +74,11 @@ Full Subtractor:
 
 
 +-------+----------------+-------+
-
-| Level   |    Supply Voltage |   Range |
-
+| Level | Supply Voltage | Range |
 +-------+----------------+-------+
-
 | High  | 5 volts        | max   |
-
 +-------+----------------+-------+
-
 | Low   | 0 volts        | min   |
-
 +-------+----------------+-------+
 
 
