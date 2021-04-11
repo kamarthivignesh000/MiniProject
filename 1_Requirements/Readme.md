@@ -71,28 +71,19 @@ Full Subtractor:
 
 ## High Level Requirements:
 
-
-
-+-------+----------------+-------+
-| Level | Supply Voltage | Range |
-+-------+----------------+-------+
-| High  | 5 volts        | max   |
-+-------+----------------+-------+
-| Low   | 0 volts        | min   |
-+-------+----------------+-------+
-
-
+Level  | Supply Voltage  | Range
+-------| ----------------|--------
+High   | 5 Volts         |  Max
+Low    | 0 Volts         |  Min
 
 ##  Low level Requirements:
 
 
-+------------+----------+
-| Transistor | Type     |
-+------------+----------+
-| CMOS       | Unipolar |
-+------------+----------+
-| BJT        | Bipolar  |
-+------------+----------+
+Transistor  |  Type  
+------------|------------
+   CMOS     | Unipolar 
+   BJT      | Bipolar  
+   
 
 
 
