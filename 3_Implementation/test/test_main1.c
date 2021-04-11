@@ -26,78 +26,74 @@ void test_oring(void)
 
 void test_Not(void)
 {
-  TEST_ASSERT( a == 0 ); //this one will pass
-  TEST_ASSERT( a == 1 ); //this one will pass
-  TEST_ASSERT( b == 0 ); //this one will pass
-  TEST_ASSERT( b == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, a); //this one will pass
 }
 
 void test_nand(void)
 {
-  TEST_ASSERT( a == 0 ); //this one will pass
-  TEST_ASSERT( a == 1 ); //this one will pass
-  TEST_ASSERT( b == 0 ); //this one will pass
-  TEST_ASSERT( b == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, a); //this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( a == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, b);//this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( b == 1 ); //this one will pass
 }
 
 void test_nor(void)
 {
-  TEST_ASSERT( a == 0 ); //this one will pass
-  TEST_ASSERT( a == 1 ); //this one will pass
-  TEST_ASSERT( b == 0 ); //this one will pass
-  TEST_ASSERT( b == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, a); //this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( a == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, b);//this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( b == 1 ); //this one will pass
 }
 
 void test_ex_or(void)
 {
-  TEST_ASSERT( a == 0 ); //this one will pass
-  TEST_ASSERT( a == 1 ); //this one will pass
-  TEST_ASSERT( b == 0 ); //this one will pass
-  TEST_ASSERT( b == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, a); //this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( a == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, b);//this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( b == 1 ); //this one will pass
 }
 
 void test_ex_nor(void)
 {
-  TEST_ASSERT( a == 0 ); //this one will pass
-  TEST_ASSERT( a == 1 ); //this one will pass
-  TEST_ASSERT( b == 0 ); //this one will pass
-  TEST_ASSERT( b == 1 ); //this one will pass
+ TEST_ASSERT_EQUAL_INT(0, a); //this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( a == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, b);//this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( b == 1 ); //this one will pass
 }
 
 void test_half_adder(void)
 {
-  TEST_ASSERT( a == 0 ); //this one will pass
-  TEST_ASSERT( a == 1 ); //this one will pass
-  TEST_ASSERT( b == 0 ); //this one will pass
-  TEST_ASSERT( b == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, a); //this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( a == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, b);//this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( b == 1 ); //this one will pass
 }
 
 void test_half_subtractor(void)
 {
-  TEST_ASSERT( a == 0 ); //this one will pass
-  TEST_ASSERT( a == 1 ); //this one will pass
-  TEST_ASSERT( b == 0 ); //this one will pass
-  TEST_ASSERT( b == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, a); //this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( a == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, b);//this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( b == 1 ); //this one will pass
 }
 
 void test_full_adder(void)
 {
-  TEST_ASSERT( a == 0 ); //this one will pass
-  TEST_ASSERT( a == 1 ); //this one will pass
-  TEST_ASSERT( b == 0 ); //this one will pass
-  TEST_ASSERT( b == 1 ); //this one will pass
-  TEST_ASSERT( c == 0 ); //this one will pass
-  TEST_ASSERT( c == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, a); //this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( a == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, b);//this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( b == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, c);//this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( b == 1 ); //this one will pass
 }
-
 void test_full_subtractor(void)
 {
-  TEST_ASSERT( a == 0 ); //this one will pass
-  TEST_ASSERT( a == 1 ); //this one will pass
-  TEST_ASSERT( b == 0 ); //this one will pass
-  TEST_ASSERT( b == 1 ); //this one will pass
-  TEST_ASSERT( c == 0 ); //this one will pass
-  TEST_ASSERT( c == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, a); //this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( a == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, b);//this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( b == 1 ); //this one will pass
+  TEST_ASSERT_EQUAL_INT(0, c);//this one will pass
+  //TEST_ASSERT_EQUAL_INT(1, a);( b == 1 ); //this one will pass
 }
 
 
