@@ -71,8 +71,7 @@ Full Subtractor:
 
 ## High Level Requirements:
 
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
+
 
 +-------+----------------+-------+
 | Level | Supply Voltage | Range |
@@ -85,9 +84,6 @@ Full Subtractor:
 
 
 ##  Low level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
-
 
 
 +------------+----------+
