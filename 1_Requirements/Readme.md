@@ -75,7 +75,6 @@ Level  | Supply Voltage  | Range
 -------| ----------------|--------
 High   | 5 Volts         |  Max
 Low    | 0 Volts         |  Min
-
 2. Low level Requirements
 
 Transistor  |  Type  
