@@ -1,4 +1,4 @@
-![Capture](https://user-images.githubusercontent.com/80352730/114403223-39c36700-9bc2-11eb-9124-8a02228f519c.JPG)
+![Title](https://user-images.githubusercontent.com/80352730/114403675-a3437580-9bc2-11eb-84b1-dbe97b6a603e.JPG)
 
 # Requirements
 ## Introduction
