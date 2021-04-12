@@ -82,7 +82,3 @@ Transistor  |  Type
 ------------|------------
    CMOS     | Unipolar 
    BJT      | Bipolar  
-   
-
-
-
