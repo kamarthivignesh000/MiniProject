@@ -47,36 +47,36 @@ Full Subtractor:
 
 # 4Ws and 1H
 
-## Who
+1. Who
 
 	Digital designers designs logic gates based on their requirement.
 
-## What
+2. What
 
 	Logic gates are devices which perfoms or computes boolean expressions.
 
-## When
+3. When
 
 	When digital system requires to compute logical operations then logic gates are used. 
 
-## Where
+4. Where
 
 	Every digital circuit requires logic gates. Digital devices are digital clock, mobile phone, computer, processors etc.
 
-## How
+1. How
 
 	Logic gates are available in the form of Integrated Cicuits(ICs). These ICs are used to compute logical operations.
 
 # Detail requirements
 
-## High Level Requirements
+1. High Level Requirements
 
 Level  | Supply Voltage  | Range
 -------| ----------------|--------
 High   | 5 Volts         |  Max
 Low    | 0 Volts         |  Min
 
-##  Low level Requirements
+2. Low level Requirements
 
 Transistor  |  Type  
 ------------|------------
