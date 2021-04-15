@@ -20,8 +20,8 @@ PS No. |  Name   | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 264601 | Vignesh  | X No     | X No   |X No   |X No            
 
 ## Learning Resources
-1. [markdownCheatsheet] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-2. [markdownBasics] (https://guides.github.com/features/mastering-markdown/)
-3. [git inspector] (https://github.com/ejwa/gitinspector.git)
-4. [github workflow] (https://docs.github.com/en/actions/learn-github-action)
-
+1. [LOgicgates] (https://www.tutorialspoint.com/computer_logical_organization/logic_gates.htm)
+2. [markdownCheatsheet] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+3. [markdownBasics] (https://guides.github.com/features/mastering-markdown/)
+4. [git inspector] (https://github.com/ejwa/gitinspector.git)
+5. [github workflow] (https://docs.github.com/en/actions/learn-github-action)
