@@ -30,6 +30,10 @@ endif
 all:$(BUILD_DIR)
 	gcc $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
+$(BUILD_DIR):
+# Create directory to store the built files
+	mkdir $(BUILD_DIR)
+
 run: all
 	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
@@ -48,7 +52,5 @@ $(BUILD_DIR):
 	mkdir $(BUILD_DIR)
 
 clean:
-	$(RM) $(call FixPath,$(BUILD_DIR)/*)
-# make clean -C doc
-# rmdir $(BUILD_DIR) doc/html
-	$(RM) *.gcda *.gcov *.gcno	
+	rm -rf $(call FixPath,$(BUILD_DIR)/*)
+	make -C doc clean

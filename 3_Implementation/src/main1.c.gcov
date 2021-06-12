@@ -1,0 +1,348 @@
+        -:    0:Source:src/main1.c
+        -:    0:Graph:src/main1.gcno
+        -:    0:Data:src/main1.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    0:Source is newer than graph
+        -:    1:/**
+        -:    2: * @file main1.c
+        1:    3: * @author Vignesh (kamarthivignesh000@gmail.com)
+        1:    3-block  0
+        -:    4: * @brief Logic Gates Operations
+        1:    5: * @version 0.1
+        1:    5-block  0
+        1:    6: * @date 2021-06-12
+        -:    7: * 
+        -:    8: * @copyright Copyright (c) 2021
+       13:    9: * 
+       13:    9-block  0
+       13:   10: */
+       13:   11:#include<stdio.h>
+       13:   11-block  0
+       13:   11-block  1
+       12:   11-block  2
+       12:   11-block  3
+       12:   11-block  4
+        -:   12:#include "main.h"
+        1:   13:int main()
+        1:   13-block  0
+        1:   14:{
+        -:   15:    /**
+        -:   16:     * @brief Choose operation
+        -:   17:     * 
+       12:   18:     */
+       12:   18-block  0
+       12:   19:    printf("Choose options:\n");
+       12:   20:    printf("1.And Operation\n2.Or Operation\n3.NOT Operation\n4.Nand Operation\n5.Nor Operation\n6.Xor Operation\n7.Xnor Operation\n8.Half Adder Operation\n9.Half Subtractor Operation\n10.Full Adder Operation\n11.Full Subtractor Operation\n12.Multiplexer\n13.Demultiplexer\n14.Encoder\n15.Decoder\n");
+        -:   21:    int choice,a,b,c,sel,y3,y2,y1,y0;
+        -:   22:    begin:
+        1:   23:        printf("Enter your choice:\n");
+        1:   23-block  0
+        -:   24:        scanf("%d",&choice);
+        1:   25:        switch(choice)
+        -:   26:        {
+        1:   27:            case 1:
+        1:   27-block  0
+        -:   28:            /**
+        1:   29:             * @brief Enter a & b values
+        -:   30:             * 
+        1:   31:             */
+        1:   31-block  0
+        -:   32:                printf("Enter a,b values\n");
+        1:   33:                scanf("%d\n%d",&a,&b);
+        -:   34:                if(a>1 || a<0 || b>1 || b<0)
+        1:   35:                {
+        1:   35-block  0
+        -:   36:                    printf("Enter valid values i.e., 0 or 1\n");
+        1:   37:                    goto begin;
+        -:   38:                }
+        1:   39:                anding(a,b);
+        1:   39-block  0
+        -:   40:                goto begin;
+        1:   41:            case 2:
+        -:   42:            /**
+        1:   43:             * @brief Enter a, b & c values
+        1:   43-block  0
+        -:   44:             * 
+        1:   45:             */
+        -:   46:                printf("Enter a,b values\n");
+        1:   47:                scanf("%d\n%d",&a,&b);
+        1:   47-block  0
+        -:   48:                if(a>1 || a<0 || b>1 || b<0)
+        1:   49:                {
+        -:   50:                    printf("Enter valid values i.e., 0 or 1\n");
+        1:   51:                    goto begin;
+        1:   51-block  0
+        -:   52:                }            
+        1:   53:                oring(a,b);
+        -:   54:                goto begin;
+        1:   55:            case 3:
+        1:   55-block  0
+        -:   56:            /**
+        1:   57:             * @brief Enter a, b & c values
+        -:   58:             * 
+        1:   59:             */
+        1:   59-block  0
+        -:   60:                printf("Enter a values\n");
+        1:   61:                scanf("%d",&a);
+        -:   62:                if(a>1 || a<0)
+        1:   63:                {
+        1:   63-block  0
+        -:   64:                    printf("Enter valid values i.e., 0 or 1\n");
+        1:   65:                    goto begin;
+        -:   66:                }
+        1:   67:                Not(a);
+        1:   67-block  0
+        1:   68:                goto begin;
+        1:   68-block  0
+        -:   69:            case 4:
+        -:   70:            /**
+        -:   71:             * @brief Enter a, b & c values
+        1:   72:             * 
+        1:   72-block  0
+        -:   73:             */
+        1:   74:                printf("Enter a,b,c values\n");
+        1:   74-block  0
+        1:   75:                scanf("%d\n%d\n%d",&a,&b,&c);
+        1:   76:                if(a>1 || a<0 || b>1 || b<0 || c>1 || c<0)
+        1:   76-block  0
+        -:   77:                {
+        1:   78:                    printf("Enter valid values i.e., 0 or 1\n");
+        1:   78-block  0
+        1:   79:                    goto begin;
+        1:   80:                }
+        1:   80-block  0
+        -:   81:                nand(a,b);
+        1:   82:                goto begin;
+        1:   82-block  0
+        1:   83:            case 5:
+        1:   84:            /**
+        1:   84-block  0
+        -:   85:             * @brief Enter a, b & c values
+        1:   86:             * 
+        1:   86-block  0
+        1:   87:             */
+        1:   88:                printf("Enter a,b values\n");
+        1:   88-block  0
+        -:   89:                scanf("%d\n%d",&a,&b);
+        1:   90:                if(a>1 || a<0 || b>1 || b<0)
+        1:   90-block  0
+        1:   91:                {
+        1:   92:                    printf("Enter valid values i.e., 0 or 1\n");
+        1:   92-block  0
+        -:   93:                    goto begin;
+        1:   94:                }
+        1:   94-block  0
+        1:   95:                nor(a,b);
+        1:   96:                goto begin;
+        1:   96-block  0
+        -:   97:            case 6:
+        1:   98:            /**
+        1:   98-block  0
+        1:   99:             * @brief Enter a, b & c values
+        1:  100:             * 
+        1:  100-block  0
+        -:  101:             */
+        1:  102:                printf("Enter a,b,c values\n");
+        1:  102-block  0
+        1:  103:                scanf("%d\n%d",&a,&b);
+        1:  104:                if(a>1 || a<0 || b>1 || b<0)
+        1:  104-block  0
+        -:  105:                {
+        1:  106:                    printf("Enter valid values i.e., 0 or 1\n");
+        1:  106-block  0
+        1:  107:                    goto begin;
+        1:  108:                }
+        1:  108-block  0
+        -:  109:                ex_or(a,b);
+        1:  110:                goto begin;
+        1:  110-block  0
+        1:  111:            case 7:
+        1:  112:            /**
+        1:  112-block  0
+        -:  113:             * @brief Enter a, b & c values
+        1:  114:             * 
+        1:  114-block  0
+        1:  115:             */
+        -:  116:                printf("Enter a,b values\n");
+        -:  117:                scanf("%d\n%d",&a,&b);
+        -:  118:                if(a>1 || a<0 || b>1 || b<0)
+        -:  119:                {
+        -:  120:                    printf("Enter valid values i.e., 0 or 1\n");
+        -:  121:                    goto begin;
+        -:  122:                }
+        -:  123:                ex_nor(a,b);
+        -:  124:                goto begin;
+        -:  125:            case 8:
+        -:  126:            /**
+        -:  127:             * @brief Enter a, b & c values
+        -:  128:             * 
+        -:  129:             */
+        -:  130:                printf("Enter a,b values\n");
+        -:  131:                scanf("%d\n%d",&a,&b);
+        -:  132:                if(a>1 || a<0 || b>1 || b<0)
+        -:  133:                {
+        -:  134:                    printf("Enter valid values i.e., 0 or 1\n");
+        -:  135:                    goto begin;
+        -:  136:                }
+        -:  137:                half_adder(a,b);
+        -:  138:                goto begin;
+        -:  139:            case 9:
+        -:  140:            /**
+        -:  141:             * @brief Enter a, b & c values
+        -:  142:             * 
+        -:  143:             */
+        -:  144:                printf("Enter a,b values\n");
+        -:  145:                scanf("%d\n%d",&a,&b);
+        -:  146:                if(a>1 || a<0 || b>1 || b<0)
+        -:  147:                {
+        -:  148:                    printf("Enter valid values i.e., 0 or 1\n");
+        -:  149:                    goto begin;
+        -:  150:                }
+        -:  151:                half_subtractor(a,b);
+        -:  152:                goto begin;
+        -:  153:            case 10:
+        -:  154:            /**
+        -:  155:             * @brief Enter a, b & c values
+        -:  156:             * 
+        -:  157:             */
+        -:  158:                printf("Enter a,b,c values\n");
+        -:  159:                scanf("%d\n%d\n%d",&a,&b,&c);
+        -:  160:                if(a>1 || a<0 || b>1 || b<0 || c>1 || c<0)
+        -:  161:                {
+        -:  162:                    printf("Enter valid values i.e., 0 or 1\n");
+        -:  163:                    goto begin;
+        -:  164:                }
+        -:  165:                full_adder(a,b,c);
+        -:  166:                goto begin;
+        -:  167:            case 11:
+        -:  168:            /**
+        -:  169:             * @brief Enter a, b & c values
+        -:  170:             * 
+        -:  171:             */
+        -:  172:                printf("Enter a,b,c values\n");
+        -:  173:                scanf("%d\n%d\n%d",&a,&b,&c);
+        -:  174:                if(a>1 || a<0 || b>1 || b<0 || c>1 || c<0)
+        -:  175:                {
+        -:  176:                    printf("Enter valid values i.e., 0 or 1\n");
+        -:  177:                    goto begin;
+        -:  178:                }
+        -:  179:                full_subtractor(a,b,c);
+        -:  180:                goto begin;
+        -:  181:            case 12:
+        -:  182:            /**
+        -:  183:             * @brief Enter a & b values
+        -:  184:             * 
+        -:  185:             */
+        -:  186:                printf("Enter a,b values\n");
+        -:  187:                scanf("%d\n%d",&a,&b);
+        -:  188:                if(a>1 || a<0 || b>1 || b<0)
+        -:  189:                {
+        -:  190:                    printf("Enter valid values i.e., 0 or 1\n");
+        -:  191:                    goto begin;
+        -:  192:                }
+        -:  193:                printf("Enter selection line\n");
+        -:  194:                scanf("%d",&sel);
+        -:  195:                multiplexer_2x1(a,b,sel);
+        -:  196:                goto begin;
+        -:  197:            case 13:
+        -:  198:            /**
+        -:  199:             * @brief Enter a, b & c values
+        -:  200:             * 
+        -:  201:             */
+        -:  202:                printf("Enter a,b,c values\n");
+        -:  203:                scanf("%d\n%d\n%d",&a,&b,&c);
+        -:  204:                if(a>1 || a<0 || b>1 || b<0 || c>1 || c<0)
+        -:  205:                {
+        -:  206:                    printf("Enter valid values i.e., 0 or 1\n");
+        -:  207:                    goto begin;
+        -:  208:                }
+        -:  209:                printf("Enter selection line\n");
+        -:  210:                scanf("%d",&sel);
+        -:  211:                demultiplexer_1x2(c,sel);
+        -:  212:                goto begin;
+        -:  213:            case 14:
+        -:  214:                printf("Enter y3,y2,y1,y0 values\n");
+        -:  215:                scanf("%d\n%d\n%d\n%d",&y3,&y2,&y1,&y0);
+        -:  216:                if(y3>1 || y3<0 || y2>1 || y2<0 || y1>1 || y1<0 || y0>1 || y0<0)
+        -:  217:                {
+        -:  218:                    printf("Enter valid values i.e., 0 or 1\n");
+        -:  219:                    goto begin;
+        -:  220:                }
+        -:  221:                encoder(y3,y2,y1,y0);
+        -:  222:                goto begin;
+        -:  223:            case 15:
+        -:  224:                printf("Enter a & b values\n");
+        -:  225:                scanf("%d\n%d",&a,&b);
+        -:  226:                if(a>1 || a<0 || b>1 || b<0)
+        -:  227:                {
+        -:  228:                    printf("Enter valid values i.e., 0 or 1\n");
+        -:  229:                    goto begin;
+        -:  230:                }
+        -:  231:                decoder(a,b);
+        -:  232:                goto begin;
+        -:  233:            default:
+        -:  234:                printf("Enter valid values\n");
+        -:  235:                break;
+        -:  236:        }
+        -:  237:}
+        -:  238:void anding(int a,int b)
+        -:  239:{
+        -:  240:    printf("a=%d b=%d  result=%d\n",a,b,a&b);
+        -:  241:}
+        -:  242:void oring(int a,int b)
+        -:  243:{
+        -:  244:    printf("a=%d b=%d  result=%d\n",a,b,a|b);
+        -:  245:}
+        -:  246:void Not(int a)
+        -:  247:{
+        -:  248:    printf("a=%d result=%d\n",a,!a);
+        -:  249:}
+        -:  250:void nand(int a,int b)
+        -:  251:{
+        -:  252:    printf("a=%d b=%d  result=%d\n",a,b,!(a&b));
+        -:  253:}
+        -:  254:void nor(int a,int b)
+        -:  255:{
+        -:  256:    printf("a=%d b=%d  result=%d\n",a,b,!(a|b));
+        -:  257:}
+        -:  258:void ex_or(int a,int b)
+        -:  259:{
+        -:  260:    printf("a=%d b=%d  result=%d\n",a,b,a^b);
+        -:  261:}
+        -:  262:void ex_nor(int a,int b)
+        -:  263:{
+        -:  264:    printf("a=%d b=%d  result=%d\n",a,b,!(a^b));
+        -:  265:}
+        -:  266:void half_adder(int a,int b)
+        -:  267:{
+        -:  268:    printf("a=%d b=%d  sum=%d  carry=%d\n",a,b,a^b,a&b);
+        -:  269:}
+        -:  270:void half_subtractor(int a,int b)
+        -:  271:{
+        -:  272:    printf("a=%d b=%d  difference=%d  borrow=%d\n",a,b,a^b,((!a)&b));
+        -:  273:}
+        -:  274:void full_adder(int a,int b,int c)
+        -:  275:{
+        -:  276:    printf("a=%d b=%d c=%d  sum=%d  carry=%d\n",a,b,c,a^b^c,(c&(a^b))+(a&b));
+        -:  277:}
+        -:  278:void full_subtractor(int a,int b,int c)
+        -:  279:{
+        -:  280:    printf("a=%d b=%d c=%d  difference=%d  borrow=%d\n",a,b,c,a^b^c,(((!a)&c)+((!a)&b)+(b&c)));
+        -:  281:}
+        -:  282:void multiplexer_2x1(a,b,sel)
+        -:  283:{
+        -:  284:    printf("a=%d b=%d sel=%d result=%d\n",a,b,sel,(((!sel)&a)+(sel&b)));
+        -:  285:}
+        -:  286:void demultiplexer_1x2(y,sel)
+        -:  287:{
+        -:  288:    printf("y=%d sel=%d a=%d b=%d\n",y,sel,(!sel)&y,sel&y);
+        -:  289:}
+        -:  290:void encoder(y3,y2,y1,y0)
+        -:  291:{
+        -:  292:    printf("y3=%d y2=%d y1=%d y0=%d a=%d b=%d\n",y3,y2,y1,y0,y3+y2,y3+y1);
+        -:  293:}
+        -:  294:void decoder(a,b)
+        -:  295:{
+        -:  296:    printf("a=%d b=%d y3=%d y2=%d y1=%d y0=%d\n",a,b,a&b,a&(!b),(!a)&b,(!a)&(!b));
+        -:  297:}

@@ -35,6 +35,29 @@ Full Subtractor:
  A full subtractor is a combinational circuit that performs subtraction of two bits, one is minuend and other is subtrahend, taking into account borrow of the previous adjacent lower minuend bit. 
 	This circuit has three inputs and two outputs. The three inputs A, B and Bin, denote the minuend, subtrahend, and previous borrow, respectively.
 	The two outputs, D and Bout represent the difference and output borrow, respectively.
+
+Multiplexer:
+
+![MULTIPLEXER]( https://static.javatpoint.com/tutorial/digital-electronics/images/multiplexer.png )
+In 2×1 multiplexer, there are only two inputs, i.e., A0 and A1, 1 selection line, i.e., S0 and single outputs, i.e., Y. On the basis of the combination of inputs which are present at the selection line S0, one of these 2 inputs will be connected to the output.
+
+Demultiplexer:
+
+![DEMULTIPLEXER]( https://www.tutorialspoint.com/digital_circuits/images/1_4_demultiplexer.jpg )
+De-Multiplexer is a combinational circuit that performs the reverse operation of Multiplexer. It has single input, ‘n’ selection lines and maximum of 2n outputs. The input will be connected to one of these outputs based on the values of selection lines.
+
+Since there are ‘n’ selection lines, there will be 2n possible combinations of zeros and ones. So, each combination can select only one output. De-Multiplexer is also called as De-Mux.
+
+Decoder:
+
+![DECODER]( https://media.geeksforgeeks.org/wp-content/uploads/decoder-truth-table.jpg )
+The 2-to-4 line binary decoder depicted above consists of an array of four AND gates. The 2 binary inputs labeled A and B are decoded into one of 4 outputs, hence the description of a 2-to-4 binary decoder. Each output represents one of the minterms of the 2 input variables, (each output = a minterm).
+
+Encoder:
+
+![ENCODER]( https://media.geeksforgeeks.org/wp-content/uploads/Encoder-4x2.jpg )
+
+The 4 to 2 Encoder consists of four inputs Y3, Y2, Y1 & Y0 and two outputs A1 & A0. At any time, only one of these 4 inputs can be ‘1’ in order to get the respective binary code at the output. The figure below shows the logic symbol of 4 to 2 encoder
 	
 ## Cost and Features
    Cost of logic gate is less because of advance development of manufacturing techinques. Manufacturing of logic gate is very difficult. Logic gates are manufactured in extreme special conditions. 	

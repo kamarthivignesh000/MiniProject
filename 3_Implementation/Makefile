@@ -13,7 +13,8 @@ INC = -Iinc\
 
 #To check if the OS is Windows or Linux and set the executable file extension and delete command accordingly
 ifdef OS
-   RM = del /q
+   RM = del /f
+   #RM = rmdir
    FixPath = $(subst /,\,$1)
    EXEC = exe
 else
@@ -48,7 +49,7 @@ $(BUILD_DIR):
 	mkdir $(BUILD_DIR)
 
 clean:
-	$(RM) $(call FixPath,$(BUILD_DIR)/*)
-# make clean -C doc
-# rmdir $(BUILD_DIR) doc/html
-	$(RM) *.gcda *.gcov *.gcno	
+	rm -rf $(call FixPath,$(BUILD_DIR)/*)
+	make -C doc clean
+	$(RM) *.gcda *.gcov *.gcno
+	
